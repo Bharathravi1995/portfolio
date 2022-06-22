@@ -23,6 +23,14 @@ export default function App() {
           <ContactMe />
         </main>
         <SocialProfiles />
+        <footer>
+          <small>
+            Made with <span>❤</span> by{" "}
+            <a href="https://csb-em0wuy.netlify.app/" target="_blank">
+              Bharathwaj Ravi
+            </a>
+          </small>
+        </footer>
       </div>
     </div>
   );

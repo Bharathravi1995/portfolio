@@ -39,6 +39,7 @@ const skillsList = [
     label: "Webpack"
   }
 ];
+
 const Skills = () => {
   return (
     <section className="section" name="skills">

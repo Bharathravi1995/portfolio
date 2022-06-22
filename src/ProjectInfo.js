@@ -1,5 +1,5 @@
 const ProjectInfo = ({
-  project: { projectName, gitHubLink, hostLink, details, techStack, imgSrc },
+  project: { projectName, gitHubLink, hostLink, details, techStack, gifSrc },
   onClose
 }) => {
   return (
@@ -14,7 +14,7 @@ const ProjectInfo = ({
       </div>
       <div className="project-info-content">
         <h3 className="project-info-name">{projectName}</h3>
-        <img className="project-info-image" src={imgSrc} alt={projectName} />
+        <img className="project-info-image" src={gifSrc} alt={projectName} />
         <h4>About</h4>
         <p className="project-info-details">{details} </p>
         <h4>Technologies</h4>

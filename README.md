@@ -2,7 +2,7 @@
 
 This is a portfolio application built using React, HTML, JS and CSS.
 
-Click here for [https://csb-em0wuy.netlify.app/](demo)
+Click here for [https://csb-bw2e62.netlify.app/](demo)
 
 ## Available Scripts
 

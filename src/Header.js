@@ -2,18 +2,18 @@ import { useRef, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 const navLinks = [
-  { path: "aboutme", name: "About Me" },
+  { path: "aboutme", name: "About" },
   { path: "skills", name: "Skills" },
   { path: "education", name: "Education" },
   { path: "experience", name: "Experience" },
   { path: "projects", name: "Projects" },
-  { path: "contactme", name: "Contact Me" }
+  { path: "contactme", name: "Contact" }
 ];
 const Header = () => {
   const [offsetHeight, setOffsetHeight] = useState(0);
   useEffect(() => {
     let clientHeight = window.innerHeight;
-    setOffsetHeight(-clientHeight * 0.3);
+    setOffsetHeight(-clientHeight * 0.6);
   }, []);
   const navRef = useRef(),
     toggleNavBar = () => {
@@ -36,46 +36,22 @@ const Header = () => {
           menu
         </span>
       </div>
-      <ul className="nav-links" onClick={toggleNavBar}>
+      <ul className="nav-links">
         {navLinks.map((navLink, index) => (
           <li key={index}>
             <Link
-              activeClass="theme-clr"
+              activeClass=""
               to={navLink.path}
               spy={true}
               smooth={true}
               duration={500}
-              offset={-75}
+              offset={index === navLinks.length - 1 ? offsetHeight : -75}
+              onClick={toggleNavBar}
             >
               {navLink.name}
             </Link>
           </li>
         ))}
-
-        {/* <li>
-          <a href="#skills">Skills</a>
-        </li> */}
-        {/* <li>
-          <Link
-            activeClass="theme-clr"
-            className="test1"
-            to="education"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            Education
-          </Link>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#conatactme">Contact me</a>
-        </li> */}
       </ul>
     </nav>
   );

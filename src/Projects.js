@@ -4,87 +4,57 @@ import { useState } from "react";
 
 const projectsList = [
   {
-    projectName: "A new Project",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
+    projectName: "Google home page clone",
+    gitHubLink: "https://github.com/Bharathravi1995/google-clone",
+    hostLink: "https://csb-tiiwks.netlify.app/",
     details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
+      "In this app, google home page with header, footer, search field and search buttons are created. On clicking search or pressing enter, page will be redirected to the google website with the searched keyword.",
+    techStack: ["HTML", "CSS", "JS"],
+    imgSrc: "./img/google.png",
+    gifSrc: "./img/google.gif"
+  },
+  {
+    projectName: "Weather application",
+    gitHubLink: "https://github.com/Bharathravi1995/weather-app",
+    hostLink: "https://csb-ksx425.netlify.app/",
+    details:
+      "In this project, an application to view the current weather status of a city is created.",
+    techStack: ["HTML", "CSS", "JS", "openweathermap API"],
+    imgSrc: "./img/weather.png",
+    gifSrc: "./img/weather.gif"
+  },
+  {
+    projectName: "Meal builder",
+    gitHubLink: "https://github.com/Bharathravi1995/meal-builder",
+    hostLink: "https://csb-kqwwcs.netlify.app/",
+    details:
+      "In this project, a meal builder application to generate a random meal with it's ingredients and instructions is created.",
+    techStack: ["React", "JSX", "CSS", "mealdb API"],
+    imgSrc: "./img/mealBuilder.png",
+    gifSrc: "./img/mealBuilder.gif"
+  },
+  {
+    projectName: "Todo application",
+    gitHubLink: "https://github.com/Bharathravi1995/todo-app",
+    hostLink: "https://csb-pwgjyx.netlify.app/",
+    details:
+      "In this project, a todo builder application to create, update and delete todo is created.",
+    techStack: ["React", "JSX", "CSS"],
+    imgSrc: "./img/todo.png",
+    gifSrc: "./img/todo.gif"
+  },
+  {
+    projectName: "Portfolio",
+    gitHubLink: "https://github.com/Bharathravi1995/portfolio",
+    hostLink: "https://csb-bw2e62.netlify.app/",
+    details:
+      "In this project, my portfolio website is created showcasing my skills, education, experience and projects.",
     techStack: ["React", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project 2",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["Angular", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["React", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project 2",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["Angular", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["React", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project 2",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["Angular", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["React", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project 2",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["Angular", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
-  },
-  {
-    projectName: "A new Project",
-    gitHubLink: "https://www.npmjs.com/package/react-scroll",
-    hostLink: "https://www.npmjs.com/package/react-scroll",
-    details:
-      "Piggment is curated collection of amazingly colored gradients fordesigners, developers and smart creators over the world. now you cangenerate, explore, save, easy CSS crossbrowser gradient codes all inone place.",
-    techStack: ["React", "JS", "CSS"],
-    imgSrc: "https://i.ibb.co/tCZFDhL/Screen-Recording-2020-06-11-at-1.gif"
+    imgSrc: "./img/portfolio.png",
+    gifSrc: "./img/portfolio.gif"
   }
 ];
+
 const Projects = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState();
@@ -101,7 +71,7 @@ const Projects = () => {
               <div className="project-item-img">
                 <img src={project.imgSrc} alt={project.projectName} />
                 <span
-                  class="view-project"
+                  className="view-project"
                   onClick={() => {
                     setSelectedProject(project);
                     setIsDrawerOpen(true);

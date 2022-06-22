@@ -6,27 +6,27 @@ const SocialProfiles = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/priyanga-vanangamudi"
+            href="https://www.linkedin.com/in/bharathwaj-ravi-844098113"
           >
-            <i class="fab fa-linkedin  fa-lg"></i>
+            <i className="fab fa-linkedin  fa-lg"></i>
           </a>
         </li>
         <li>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://stackoverflow.com/users/3595110/priyanga-v"
+            href="https://www.xing.com/profile/Bharathwaj_ravi"
           >
-            <i class="fab fa-xing  fa-lg"></i>
+            <i className="fab fa-xing  fa-lg"></i>
           </a>
         </li>
         <li>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/PriyangaV"
+            href="https://github.com/Bharathravi1995"
           >
-            <i class="fab fa-github  fa-lg"></i>
+            <i className="fab fa-github  fa-lg"></i>
           </a>
         </li>
       </ul>
